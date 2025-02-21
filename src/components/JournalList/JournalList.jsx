@@ -22,9 +22,17 @@ function JournalList({ posts, setItem }) {
    if (posts.length > 0) {
       return (
          <div className="journal-list">
-            {filteredAndSortedPosts.map((el) => (
-               <JournalItem data={el} key={el.id} onClick={() => setItem(el)} />
-            ))}
+            {filteredAndSortedPosts.length ? (
+               filteredAndSortedPosts.map((el) => (
+                  <JournalItem
+                     data={el}
+                     key={el.id}
+                     onClick={() => setItem(el)}
+                  />
+               ))
+            ) : (
+               <div>В этой папке еще нет постов!</div>
+            )}
          </div>
       );
    }
