@@ -1,0 +1,16 @@
+.journal-add {
+   padding-block: 10px;
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.journal-add__wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+}
+
+.add-icon {
+   width: 20px;
+}

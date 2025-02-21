@@ -1,0 +1,23 @@
+.input {
+   padding: 10px;
+   border: none;
+   background-color: transparent;
+   width: 100%;
+   border-bottom: 1px solid #767575;
+   padding-left: 0;
+}
+
+.input:focus {
+   outline: 0;
+   border-color: #4846dc;
+}
+
+.invalid {
+   border-bottom: 1px solid red;
+}
+
+.title {
+   font-weight: 600;
+   font-size: 32px;
+   color: #fff;
+}
